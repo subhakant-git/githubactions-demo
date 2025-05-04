@@ -1,5 +1,7 @@
 name: My Second workflow
-on: workflow_dispatch
+on:
+  push:   # run it on every commit
+  workflow_dispatch: # run it manually
 jobs:
   firstjob:
     runs-on: ubuntu-latest
